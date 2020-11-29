@@ -223,6 +223,7 @@ void app_main(void)
 	 xTaskCreate(&task_ssd1306_display_text, "ssd1306_display_text",  2048,
 	 	(void *)"R", 6, NULL);
 
+
     //  xTaskCreate(&task_ssd1306_display_text, "ssd1306_display_text",  2048,
 	//  	(void *)"Test", 6, NULL);
 	//xTaskCreate(&task_ssd1306_contrast, "ssid1306_contrast", 2048, NULL, 6, NULL);
