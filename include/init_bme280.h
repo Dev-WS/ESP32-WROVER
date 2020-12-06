@@ -7,11 +7,11 @@
 #define I2C_MASTER_ACK 0
 #define I2C_MASTER_NACK 1
 
-s8 BME280_I2C_bus_write(u8 dev_addr, u8 reg_addr, u8 *reg_data, u8 cnt);
-s8 BME280_I2C_bus_read(u8 dev_addr, u8 reg_addr, u8 *reg_data, u8 cnt);
-void BME280_delay_msek(u32 msek);
-void task_bme280_normal_mode(void *ignore);
-void task_bme280_forced_mode(void *ignore);
+int8_t BME280_I2C_bus_write(uint8_t dev_addr, uint8_t reg_addr, uint8_t *reg_data, uint8_t cnt);
+int8_t BME280_I2C_bus_read(uint8_t dev_addr, uint8_t reg_addr, uint8_t *reg_data, uint8_t cnt);
+void BME280_delay_msek(uint32_t msek);
+void task_bme280(void *ignore);
+void bme280();
 
 
 #endif

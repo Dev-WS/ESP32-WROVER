@@ -20,5 +20,12 @@
 #include "./BME280/bme280.h"
 #include "init_bme280.h"
 
+int temperature;
+int humidity;
+int pressure;
+
+struct bme280_dev dev;
+struct bme280_data comp_data;
+int8_t rslt;
 
 #endif
